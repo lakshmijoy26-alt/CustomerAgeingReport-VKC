@@ -1,0 +1,4 @@
+@EndUserText.label: 'Net Due service definition'
+define service ZCUST_AGEING_NETDUE_SRV {
+  expose ZI_CUST_AGEING_NETDUE;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition Customer Ageing'
+define service ZCUST_AGEING_SRV {
+  expose ZI_CUST_AGEING_DISTINCT;
+}

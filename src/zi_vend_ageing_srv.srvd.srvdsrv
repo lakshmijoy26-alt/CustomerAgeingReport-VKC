@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vendor Ageing Posting Date'
+define service ZI_VEND_AGEING_SRV {
+  expose ZI_VENDOR_AGEING_DISTINCT;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vendor Ageing Net Due service definition'
+define service ZVEND_AGE_DUE_DT_SRV {
+  expose ZI_VENDOR_AGEING_DUEDATE;
+}

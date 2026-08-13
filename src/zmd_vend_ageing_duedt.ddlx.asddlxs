@@ -1,0 +1,80 @@
+@Metadata.layer: #CORE
+annotate entity ZI_VENDOR_AGEING_DUEDATE with
+  parameters
+    @EndUserText.label: 'Key Date'
+    P_Date
+{
+  @UI.lineItem: [{ position: 10 }]
+  AccountingDocument;
+  @UI.lineItem: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  FiscalYear;
+  @UI.lineItem: [{ position: 30 }]
+  CompanyCode;
+  @UI.lineItem: [{ position: 40 }]
+  @UI.selectionField: [{ position: 10 }]
+  @Consumption.valueHelpDefinition: [
+  {
+  entity: {
+    name: 'I_Supplier',
+    element: 'Supplier'
+  }
+  }
+  ]
+  Supplier;
+  @UI.lineItem: [{ position: 50 }]
+  PostingDate;
+  @UI.lineItem: [{ position: 60 }]
+  NetDueDate;
+  @UI.lineItem: [{ position: 70 }]
+  AccountingDocumentType;
+  @UI.lineItem: [{ position: 80 }]
+  DocumentItemText;
+  @UI.lineItem: [{ position: 90 }]
+  Region;
+  @UI.lineItem: [{ position: 100 }]
+  BusinessPlace;
+  //  @UI.lineItem: [{ position: 101 }]
+  //  distributionchannelname;
+  @UI.lineItem: [{ position: 110 }]
+  SupplierName;
+  @UI.lineItem: [{ position: 120 }]
+  @EndUserText.label: 'Aged Days'
+  AgedDays;
+  @UI.lineItem: [{ position: 130 }]
+  @EndUserText.label: 'Total Amount'
+  TotalAmount;
+  @UI.lineItem: [{ position: 140 }]
+  @EndUserText.label: 'Received Amount'
+  ReceivedAmount;
+  @UI.lineItem: [{ position: 150 }]
+  @EndUserText.label: 'Balance Amount'
+  BalanceAmount;
+  @UI.lineItem: [{ position: 160 }]
+  CompanyCodeCurrency;
+  @UI.lineItem: [{ position: 170 }]
+  @EndUserText.label: '0 to 30 days'
+  Bucket_0_30;
+  @UI.lineItem: [{ position: 180 }]
+  @EndUserText.label: '31 to 45 days'
+  Bucket_31_45;
+  @UI.lineItem: [{ position: 190 }]
+  @EndUserText.label: '46 to 60 days'
+  Bucket_46_60;
+  @UI.lineItem: [{ position: 200 }]
+  @EndUserText.label: '61 to 90 days'
+  Bucket_61_90;
+  @UI.lineItem: [{ position: 210 }]
+  @EndUserText.label: '91 to 120 days'
+  Bucket_91_120;
+  @UI.lineItem: [{ position: 220 }]
+  @EndUserText.label: '121 to 180 days'
+  Bucket_121_180;
+  @UI.lineItem: [{ position: 230 }]
+  @EndUserText.label: '181 to 360 days'
+  Bucket_181_360;
+  @UI.lineItem: [{ position: 240 }]
+  @EndUserText.label: 'Above 360 days'
+  Bucket_360_Above;
+
+}
